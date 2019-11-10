@@ -1,0 +1,14 @@
+.primal-div-style {
+  min-height: 100%;
+}
+
+.primal-body-div-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.primal-card-style {
+  width: 75%;
+  margin: 25px 0 25px 0;
+}
