@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RaftComponent } from './raft.component';
+import { KafkaComponent } from './kafka.component';
 
-describe('RaftComponent', () => {
-  let component: RaftComponent;
-  let fixture: ComponentFixture<RaftComponent>;
+describe('KafkaComponent', () => {
+  let component: KafkaComponent;
+  let fixture: ComponentFixture<KafkaComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RaftComponent ]
+      declarations: [ KafkaComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RaftComponent);
+    fixture = TestBed.createComponent(KafkaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -4,6 +4,16 @@
        style="height: 60%;margin-right: 15px">
   {{title}}
   <span class="spacer"></span>
+  <button mat-button [matMenuTriggerFor]="menu">
+    Creators
+    <mat-icon>arrow_drop_down</mat-icon>
+  </button>
+
+  <mat-menu #menu="matMenu">
+    <div mat-menu-item>Ciuchitu Ilie</div>
+    <div mat-menu-item>Ryabinina Alisa</div>
+    <div mat-menu-item>Dreglia Dumitru</div>
+  </mat-menu>
 
 </mat-toolbar>
 

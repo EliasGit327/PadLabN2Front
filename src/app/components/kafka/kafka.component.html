@@ -1,0 +1,32 @@
+<mat-card style="display: flex;flex: 1;flex-direction: column">
+  <form class="example-form">
+    <mat-form-field class="example-full-width" style="width: 100%;">
+      <textarea matInput placeholder="Message" [(ngModel)]="messageToPost" name="messageText"></textarea>
+    </mat-form-field>
+  </form>
+  <div style="justify-content: space-between;display: flex">
+    <p>Total messages: {{messages.length}}</p>
+    <tr class="spacer"></tr>
+    <button mat-raised-button color="primary" (click)="onSendBtnClick()">
+      Send
+    </button>
+  </div>
+</mat-card>
+
+<mat-card style="margin-top: 20px">
+  <mat-card-title>Messages:</mat-card-title>
+  <mat-divider></mat-divider>
+  <div *ngIf="messages.length < 1" style="display: flex;justify-content: center;padding-top: 15px">
+    No messages
+  </div>
+
+
+  <div *ngIf="messages.length >= 1" style="margin-top: 23px">
+    <div *ngFor="let mes of messages;let index = index">
+      {{index+1}}: {{mes}}
+    </div>
+  </div>
+</mat-card>
+
+
+
